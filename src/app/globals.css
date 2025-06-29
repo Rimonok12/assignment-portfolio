@@ -8,8 +8,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* Light mode background */
+  --foreground: #171717; /* Text color */
   --font-sans: 'Sporting Grotesque', sans-serif;
 }
 
@@ -22,67 +22,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fff; /* Dark mode background */
+    --foreground: #000000; /* Light text color for dark mode */
   }
 }
 
 html,
 body {
   font-family: var(--font-sans);
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(
+    --background
+  ); /* Using the CSS variable for background */
+  color: var(--foreground); /* Using the CSS variable for foreground color */
 }
 
 * {
   font-family: inherit;
-}
-
-.header-t1 {
-  font-family: 'Bw Gradual DEMO';
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 34px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.header-a1 {
-  /* position: absolute; 
-  width: 57px;
-  height: 18px;
-  top: 48px;
-  left: 790px; */
-  color: #000000;
-  /* font-family: 'Sporting Grotesque', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0; */
-}
-/* Rectangle 13 */
-.rectangle-13 {
-  position: absolute;
-  width: 100%; /* Optimized for responsiveness */
-  max-width: 1410px; /* Keeps the original width limit */
-  height: 845px;
-  top: 827px; /* Adjust this if necessary */
-  left: 15px;
-  background-color: #000000;
-  border-radius: 40px;
-  /* Optional: Adding box shadow to make it stand out more */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* /* Adding the blue left border to the About section */
-.about-section {
-  position: relative;
-  padding: 80px 20px; /* Adjust padding as needed */
-  background-color: #000000;
-  color: white;
-  border-left: 4px solid #00b4ff; /* Blue left border */
-}
-
-.text-section {
-  z-index: 10; /* Keeps content above the rectangle */
 }
