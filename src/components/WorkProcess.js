@@ -79,9 +79,9 @@ export default function WorkProcess() {
               </a>
             </div>
             <p className="text-gray-300">
-              After we have a comprehensive understanding of your brand, we'll
-              be ready to move onto design. Each page will be designed,
-              reviewed, and given your stamp of approval.
+              After we have a comprehensive understanding of your brand,
+              we&apos;ll be ready to move onto design. Each page will be
+              designed, reviewed, and given your stamp of approval.
             </p>
           </div>
 
@@ -97,9 +97,10 @@ export default function WorkProcess() {
               </a>
             </div>
             <p className="text-gray-300">
-              Whether we've just finished designing your new site or you're
-              handing off finished designs for us to develop in Webflow, we're
-              here to apply our trusted development process to your project.
+              Whether we&apos;ve just finished designing your new site or
+              you&apos;re handing off finished designs for us to develop in
+              Webflow, we&apos;re here to apply our trusted development process
+              to your project.
             </p>
           </div>
         </div>
