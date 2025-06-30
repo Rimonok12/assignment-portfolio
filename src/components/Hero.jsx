@@ -1,65 +1,123 @@
-'use client';
-
 import { FaTwitter, FaInstagram, FaFacebook, FaPhoneAlt } from 'react-icons/fa';
+// import {  } from 'react-icons/fa';
 
-const Hero = () => {
+export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 bg-[url('/22.png')] ">
-      {/* Social Icons on Left */}
-      <div className="absolute left-6 top-1/2 transform -translate-y-1/2 hidden md:flex flex-col items-center space-y-4 text-black">
-        <span className="-rotate-90 tracking-wide text-sm">@wiliianrey</span>
-        <div className="flex flex-col items-center space-y-4 mt-4">
-          <a href="#" className="hover:text-black transition-colors">
-            <FaTwitter className="w-5 h-5" />
+    <section
+      className="relative min-h-screen bg-white mt-4 "
+      style={{
+        backgroundImage: "url('/22.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* HEADER */}
+      <header className="flex justify-between items-center px-6 py-4">
+        <h1 className="text-3xl font-extrabold">DEVLOP.ME</h1>
+        <nav className="flex space-x-8 items-center">
+          <a href="#" className="text-black font-medium">
+            Home
           </a>
-          <a href="#" className="hover:text-black transition-colors">
-            <FaInstagram className="w-5 h-5" />
+          <a href="#" className="text-black font-normal">
+            About
           </a>
-          <a href="#" className="hover:text-black transition-colors">
-            <FaFacebook className="w-5 h-5" />
+          <a href="#" className="text-black font-medium">
+            Portfolio
           </a>
-        </div>
-        <div className="h-16 border-l border-black mt-4" />
-      </div>
+          <a href="#" className="text-black font-medium">
+            Blog
+          </a>
+          <button className="flex items-center gap-2 border border-black  px-5 py-2  rounded-full transition">
+            <span className="inline-block bg-white text-black ml-[-22px] rounded-full border border-black">
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="37"
+                  height="37"
+                  rx="18.5"
+                  fill="white"
+                  stroke="black"
+                />
+                <path
+                  d="M8 18.5H30M30 18.5C27.5905 18.0455 22.7714 15.9091 22.7714 11M30 18.5C27.5905 18.9545 22.7714 21.0909 22.7714 26"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Start Project
+          </button>
+        </nav>
+      </header>
 
-      {/* Hero Text */}
-      <div className="max-w-5xl mx-auto text-center md:text-left z-10 relative">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-black">
+      {/* HERO CONTENT */}
+      <div className="max-w-5xl mt-16 px-6 relative">
+        <h2 className="text-6xl md:text-7xl font-extrabold w-max p-2 leading-relaxed mt-[69px] ">
           Trusted{' '}
-          <span className="bg-black text-white px-2 rounded-md">Partner</span>{' '}
-          for
-          <br />
+          <span className="bg-black text-white rounded-lg mb-3">Partner</span>{' '}
+          for <br />
           Your Website{' '}
-          <span className="bg-black text-white px-2 rounded-md">Develop.</span>
-        </h1>
-
-        {/* Subheading */}
-        <p className="mt-6 text-lg md:text-xl text-black/80">
-          Building the world’s best marketing websites for over a decade. <br />
-          Your trusted partner for strategy, design, and dev.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="mt-10 flex gap-6 justify-center md:justify-start">
-          {/* Exact "Schedule a Call" Button */}
-          <div className="inline-flex items-center gap-3 border-2 border-black px-6 py-3 rounded-full cursor-pointer hover:bg-black hover:text-white transition">
-            <div className="w-8 h-8 rounded-full border-2 border-black flex items-center justify-center">
-              <FaPhoneAlt className="text-xl" />
-            </div>
-            <span className="text-lg font-medium">Schedule a Call</span>
-          </div>
-
-          {/* "Start Project" Button */}
-          <div className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full cursor-pointer hover:bg-gray-800 transition">
-            <span className="text-lg font-medium">Start Project</span>
+          <span className="bg-black text-white rounded">Develop.</span>
+        </h2>
+      </div>
+      <div className="mt-16 px-6 relative mx-auto flex flex-col">
+        <div className="absolute left-6 flex flex-cols-reverse   items-center space-y-4 ">
+          <span className="-rotate-90 text-sm font-medium mt-[80px]">
+            @williamrey
+          </span>
+          <div className=" grid grid-cols-1 gap-2 p-2">
+            <a href="#">
+              {/* <img src="/twitter.svg" alt="Twitter" className="w-6 h-6" /> */}
+              <FaTwitter className="w-5 h-5" />
+            </a>
+            <a href="#">
+              {/* <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" /> */}
+              <FaInstagram className="w-5 h-5" />
+            </a>
+            <a href="#">
+              <FaFacebook className="w-5 h-5" />{' '}
+            </a>
+            <div className="w-[2px] h-10 bg-black mt-2 items-center ml-2 justify-center" />
           </div>
         </div>
-      </div>
+        <div className="relative w-full max-h-screen ">
+          <div className="absolute h-[66px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p className="mt-6 text-lg text-black max-w-xl ">
+              Building the world’s best marketing websites for over a decade.
+              Your trusted partner for strategy, design, and dev.
+            </p>
+            <div className="mt-4 ">
+              {' '}
+              {/* Reduced margin here */}{' '}
+              <button className="flex items-center border border-black rounded-full  px-4 py-4  transition">
+                <FaPhoneAlt className="h-[44px] w-[44px] p-2 border border-black rounded-full mr-2 m-[-16px] cursor-pointer" />
+                Schedule a Call
+              </button>
+            </div>
+          </div>
+        </div>
 
-      {/* Decorative Gradient Overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-[#a7ffec] via-[#66ff66] to-[#00d8d8] opacity-30 z-0" /> */}
+        {/* SOCIALS LEFT SIDE */}
+      </div>
+      {/* </div> */}
     </section>
   );
-};
+}
 
-export default Hero;
+{
+  /* <div className="fixed left-4 top-1/3 flex flex-col space-y-4">
+        <a href="#"><img src="/twitter.svg" alt="Twitter" className="w-5 h-5" /></a>
+        <a href="#"><img src="/instagram.svg" alt="Instagram" className="w-5 h-5" /></a>
+        <a href="#"><img src="/facebook.svg" alt="Facebook" className="w-5 h-5" /></a>
+        <span className="rotate-90 text-sm mt-2">@williamrey</span>
+        <div className="w-px h-10 bg-black mx-auto"></div>
+      </div> */
+}

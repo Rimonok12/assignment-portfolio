@@ -1,17 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: 'class', // Enables dark mode with class toggle
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}', // Targets pages in your app
+    './components/**/*.{js,ts,jsx,tsx}', // Targets components in your app
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'gradient-custom': "url('/assets/gradient.png')",
-      // },
       fontFamily: {
-        sans: ['"Sporting Grotesque"', 'sans-serif'],
+        sans: ['"Sporting Grotesque"', 'sans-serif'], // Custom font family
       },
     },
   },

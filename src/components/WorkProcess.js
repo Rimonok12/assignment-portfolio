@@ -1,7 +1,7 @@
 export default function WorkProcess() {
   return (
-    <section className="bg-black text-white py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-black text-white py-16 px-4 rounded-[40px]">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Flex container for button + heading */}
         <div className="flex items-center justify-center relative mb-10">
           {/* Button on the left */}

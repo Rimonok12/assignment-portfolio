@@ -4,7 +4,7 @@ import { FiArrowLeft, FiArrowRight, FiArrowDown } from 'react-icons/fi';
 
 const About = () => {
   return (
-    <section className="bg-[rgba(0,0,0,1)] text-white py-20">
+    <section className="bg-[rgba(0,0,0,1)] text-white py-20 rounded-[40px]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Why Choose Me Button */}
         <div className="mb-10 relative flex flex-row">
@@ -35,14 +35,14 @@ const About = () => {
           </div>
 
           <div>
-            <p className="text-xl">
+            <p className="text-xl pb-4">
               Building the world’s best marketing websites. Your
               <br /> trusted partner for strategy, design, and dev.
             </p>
-            <hr className="border-t border-current" />
+            <hr className="border-t border-current pb-4" />
             <div className="relative my-4 p-5">
               <div className="absolute top-1/2 right-5 transform -translate-y-1/2 flex items-center">
-                <FiArrowLeft
+                {/* <FiArrowLeft
                   className="
           w-[auto] h-[60px] 
           p-2
@@ -59,7 +59,45 @@ const About = () => {
           rounded-full
           cursor-pointer
         "
-                />
+                /> */}
+                <svg
+                  width="140"
+                  height="60"
+                  viewBox="0 0 140 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="80.5"
+                    y="0.5"
+                    width="59"
+                    height="59"
+                    rx="29.5"
+                    fill="black"
+                    stroke="white"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="59"
+                    height="59"
+                    rx="29.5"
+                    fill="black"
+                    stroke="white"
+                  />
+                  <path
+                    d="M92 30H128M128 30C124.057 29.2727 116.171 25.8545 116.171 18M128 30C124.057 30.7273 116.171 34.1455 116.171 42"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M48 30H12M12 30C15.9429 29.2727 23.8286 25.8545 23.8286 18M12 30C15.9429 30.7273 23.8286 34.1455 23.8286 42"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
           </div>

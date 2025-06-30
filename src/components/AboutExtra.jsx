@@ -10,19 +10,19 @@ const AboutExtra = () => {
 
       <div className="relative mt-40 text-center max-w-5xl mx-auto z-10">
         {/* Headline */}
-        <div className="absolute right-6 transform -translate-y-1/2 m-[auto] flex items-center">
+        <div className="absolute right-6 mr-[25px] pb-18 transform -translate-y-1/2 m-[auto] flex items-center">
           <FiArrowDown className="h-[44px] w-[44px] p-2 border-2 border-black rounded-full cursor-pointer" />
           <button className="h-[44px] px-5 border-2 border-black rounded-full text-base font-medium hover:bg-black hover:text-white transition">
             About
           </button>
         </div>
-        <h1 className="text-6xl sm:text-7xl gap-3  p-8 font-extrabold leading-snug">
+        <h1 className="text-6xl sm:text-7xl gap-3  p-8 font-extrabold leading-[126px]">
           I’ve been{' '}
-          <span className="bg-black text-white px-4 py-2 rounded-lg">
+          <span className="bg-black pb-4 border  text-white px-4 py-2 rounded-lg">
             Developing
           </span>
           <br />
-          Websites since{' '}
+          Websites since
           <span className="bg-black text-white px-4 py-1 rounded-lg">2013</span>
         </h1>
 

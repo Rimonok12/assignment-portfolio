@@ -21,15 +21,15 @@
 //               </svg>
 //               <span className="text-sm font-medium">Contact</span>
 //             </button>
-  
+
 //             <h2 className="text-4xl font-bold mb-4">
 //               Interested in <span className="bg-black text-white px-2 rounded">work</span> together?
 //             </h2>
-  
+
 //             <p className="mb-6 max-w-md">
 //               We start every new client interaction with an in-depth discovery call where we get to know each other
 //             </p>
-  
+
 //             <button className="flex items-center border border-black rounded-full px-5 py-2 hover:bg-black hover:text-white transition">
 //               <svg
 //                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@
 //               Schedule a Call
 //             </button>
 //           </div>
-  
+
 //           {/* RIGHT SIDE */}
 //           <div className="bg-black text-white rounded-2xl p-6">
 //             <form className="space-y-4">
@@ -95,7 +95,7 @@
 //                 </button>
 //               </div>
 //             </form>
-  
+
 //             <div className="flex items-center space-x-4 mt-6">
 //               <span>@williamrey</span>
 //               <span className="h-px w-6 bg-gray-600"></span>
@@ -108,9 +108,6 @@
 //       </section>
 //     );
 //   }
-  
-
-
 
 // import { Mail, Send, Facebook, Instagram, Twitter } from 'lucide-react';
 
@@ -171,16 +168,19 @@
 //   );
 // }
 
-
-
-
-import { Send, Mail, Phone, Facebook, Instagram, Twitter, ArrowDown } from "lucide-react";
+import {
+  Send,
+  Mail,
+  Phone,
+  Facebook,
+  Instagram,
+  Twitter,
+  ArrowDown,
+} from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section
-      className="min-h-screen flex flex-col md:flex-row justify-between items-center bg-[url('/22.png')] bg-cover bg-center p-8"
-    >
+    <section className="min-h-screen flex flex-col md:flex-row justify-between items-center bg-[url('/22.png')] bg-cover bg-center p-8">
       {/* Left side */}
       <div className="max-w-lg text-center md:text-left space-y-6">
         <div className="inline-flex items-center border border-black rounded-full px-3 py-1">
@@ -190,11 +190,13 @@ export default function ContactSection() {
 
         <h1 className="text-4xl md:text-6xl font-bold">
           Interested in <br />
-          <span className="bg-black text-white px-2 rounded-md">work</span> together?
+          <span className="bg-black text-white px-2 rounded-md">work</span>{' '}
+          together?
         </h1>
 
         <p className="text-lg text-black/80">
-          We start every new client interaction with an in-depth discovery call where we get to know each other
+          We start every new client interaction with an in-depth discovery call
+          where we get to know each other
         </p>
 
         <button className="inline-flex items-center border border-black rounded-full px-6 py-2 hover:bg-black hover:text-white transition">

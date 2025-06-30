@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Sporting Grotesque';
-  src: url('/fonts/SportingGrotesque-Regular.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/fonts/SportingGrotesque-Regular.otf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -29,13 +29,9 @@
 
 html,
 body {
-  font-family: var(--font-sans);
+  font-family: 'Sporting Grotesque', sans-serif !important;
   background-color: var(
     --background
   ); /* Using the CSS variable for background */
   color: var(--foreground); /* Using the CSS variable for foreground color */
-}
-
-* {
-  font-family: inherit;
 }

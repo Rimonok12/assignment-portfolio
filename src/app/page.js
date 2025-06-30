@@ -9,14 +9,14 @@ import WorkProcess from '@/components/WorkProcess';
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
         <About />
         <AboutExtra />
         <WorkProcess />
         <ContactSection />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </>
   );
