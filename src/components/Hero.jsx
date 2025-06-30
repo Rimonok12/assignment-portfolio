@@ -11,7 +11,6 @@ export default function HeroSection() {
         backgroundPosition: 'center',
       }}
     >
-      {/* HEADER */}
       <header className="flex justify-between items-center px-6 py-4">
         <h1 className="text-3xl font-extrabold">DEVLOP.ME</h1>
         <nav className="flex space-x-8 items-center">
@@ -60,9 +59,11 @@ export default function HeroSection() {
 
       {/* HERO CONTENT */}
       <div className="max-w-5xl mt-16 px-6 relative">
-        <h2 className="text-6xl md:text-7xl font-extrabold w-max p-2 leading-relaxed mt-[69px] ">
+        <h2 className="text-6xl md:text-7xl font-extrabold w-max p-2 leading-[126px] mt-[69px] ">
           Trusted{' '}
-          <span className="bg-black text-white rounded-lg mb-3">Partner</span>{' '}
+          <span className="bg-black text-white rounded-lg w- mb-3">
+            Partner
+          </span>{' '}
           for <br />
           Your Website{' '}
           <span className="bg-black text-white rounded">Develop.</span>
@@ -70,10 +71,10 @@ export default function HeroSection() {
       </div>
       <div className="mt-16 px-6 relative mx-auto flex flex-col">
         <div className="absolute left-6 flex flex-cols-reverse   items-center space-y-4 ">
-          <span className="-rotate-90 text-sm font-medium mt-[80px]">
+          <span className="-rotate-90 text-sm font-medium mt-[65px]">
             @williamrey
           </span>
-          <div className=" grid grid-cols-1 gap-2 p-2">
+          <div className=" grid grid-cols-1 gap-2 p-2 ">
             <a href="#">
               {/* <img src="/twitter.svg" alt="Twitter" className="w-6 h-6" /> */}
               <FaTwitter className="w-5 h-5" />
@@ -85,7 +86,7 @@ export default function HeroSection() {
             <a href="#">
               <FaFacebook className="w-5 h-5" />{' '}
             </a>
-            <div className="w-[2px] h-10 bg-black mt-2 items-center ml-2 justify-center" />
+            <div className="w-[2px] h-10 bg-black mt-4 items-center ml-2  justify-center" />
           </div>
         </div>
         <div className="relative w-full max-h-screen ">
